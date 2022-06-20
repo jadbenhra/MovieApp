@@ -23,7 +23,7 @@ export default function Seats({ setOrder }) {
 
   function selectSeats(seat) {
     if (!seat.isAvailable) {
-      alert("Esse assento não está disponível");
+      alert("Ce siège n'est pas disponible");
       return;
     }
 
@@ -58,7 +58,7 @@ export default function Seats({ setOrder }) {
 
   return (
     <div className="page-seats">
-      <div className="page-title">Selecione o(s) assento (s)</div>
+      <div className="page-title">Selectionnez votre/vos siège</div>
 
       <div className="seat-list">
         {showtime
@@ -81,20 +81,20 @@ export default function Seats({ setOrder }) {
 
       <div className="form">
         <div className="input-group">
-          <div className="title">Nome do comprador:</div>
+          <div className="title">Nom de l'acheteur:</div>
           <input
             type="text"
-            placeholder="Digite seu nome..."
+            placeholder="Tapez votre nom ..."
             onChange={(e) => setName(e.target.value)}
             value={name}
           ></input>
         </div>
 
         <div className="input-group">
-          <div className="title">CPF do comprador:</div>
+          <div className="title">CPF de l'acheteur:</div>
           <input
             type="text"
-            placeholder="Digite seu CPF..."
+            placeholder="Reservez votre CPF..."
             onChange={(e) => setCpf(e.target.value)}
             value={cpf}
           />
@@ -102,7 +102,7 @@ export default function Seats({ setOrder }) {
       </div>
 
       <button className="book-seats" onClick={makeBooking}>
-        Reservar assento(s)
+      Reservez votre siège
       </button>
 
       {showtime ? (

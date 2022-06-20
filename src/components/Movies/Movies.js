@@ -12,7 +12,7 @@ export default function Movies() {
 
   return (
     <>
-      <div className="page-title">Selecione o filme</div>
+      <div className="page-title">Selectionnez votre film</div>
       <div className="movie-list">
         {movies.map((movie) => (
           <Movie key={movie.id} movie={movie} />

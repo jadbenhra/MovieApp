@@ -3,17 +3,17 @@ export default function Subtitle() {
     <div className="seat-subtitle">
       <div className="subtitle">
         <div className="seat selected"></div>
-        Selecionado
+        Choisi
       </div>
 
       <div className="subtitle">
         <div className="seat"></div>
-        Disponível
+        Disponible
       </div>
 
       <div className="subtitle">
         <div className="seat unavailable"></div>
-        Inisponível
+        Indisponible
       </div>
     </div>
   );

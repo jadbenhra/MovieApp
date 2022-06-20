@@ -17,7 +17,7 @@ export default function Showtimes() {
 
   return (
     <>
-      <div className="page-title">Selecione o horário</div>
+      <div className="page-title">Selectionnez votre horraire</div>
 
       <div className="day-list">
         {showtime ? showtime.days.map((day, index) => <Day day={day} key={index}/>) : ""}
